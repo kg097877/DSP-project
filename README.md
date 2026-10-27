@@ -79,30 +79,3 @@ The quick benchmark is less statistically reliable than `benchmark_fair`. Do not
 | `mu_sweep.m` | Fixed-gain diagnostics |
 | `figures/README.md` | Figure directory placeholder (image files not verified at expected paths) |
 | Final project report | Prepared separately; PDF not yet found at repository root |
-
-## Results figures
-
-The MATLAB experiment generates these four figures in its local `results/` directory:
-
-1. `fig1_error_vs_iteration.png` — smoothed residual error with the acoustic path change at sample 8000.
-2. `fig2_mu_vs_iteration.png` — NN-predicted adaptation step size.
-3. `fig3_mse_comparison.png` — last-800-sample residual MSE comparison.
-4. `fig4_waveforms.png` — reference, desired and NN-residual signals.
-
-The folder [`figures/`](figures/) exists on GitHub. However, **the four image filenames above have not been found at `figures/` in the repository**, so this README intentionally does not embed broken image links. To display the figures, upload the PNG files to `figures/` using those exact filenames. Once present, replace this paragraph with image embeds such as `![Error comparison](figures/fig1_error_vs_iteration.png)`.
-
-## Reproducibility and limitations
-- Test and validation samples must remain separated. Do not tune a fixed baseline on final test runs.
-- This benchmark uses a single simulated acoustic scenario and eight seeds; results might change under other paths and noise distributions.
-- Tail NR improvement of 0.058 dB is too small to characterize as a decisive steady-state gain.
-- The NN oracle-label R² is weak; model generalization and overhead deserve further study.
-- MATLAB scripts are included as submitted; the PDF is a report of results reported by MATLAB, not a hardware validation.
-
-## Project report and GitHub QR code
-
-Repository: https://github.com/kg097877/DSP-project
-
-The project's final report was prepared with a QR code for this repository on the cover page. **The PDF has not been verified in the repository under `DSP_Lab_Final_Technical_Report.pdf`.** Upload the report to the repository root using that name if you want a direct report link here. The QR code should be tested with a phone before submitting the printed report.
-
-## Academic integrity
-Interpret performance claims as averages for the specified simulation, not guarantees of superiority. The source code and outcome metrics should be retained with submitted records.

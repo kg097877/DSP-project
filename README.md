@@ -77,14 +77,12 @@ The quick benchmark is less statistically reliable than `benchmark_fair`. Do not
 | `benchmark_fair.m` | Validation-selected fixed baseline versus 8 independent held-out runs |
 | `benchmark_quick.m` | Lightweight optional benchmark |
 | `mu_sweep.m` | Fixed-gain diagnostics |
-| `figures/` | Captured MATLAB plots supplied by the project author |
-| `project_report.pdf` | Submission report; cover QR finalized after publication |
+| `figures/` | Screenshots to upload from the project's results package |
+| `DSP_Lab_Final_Technical_Report.pdf` | Final report (upload PDF to repository separately) |
 
-## Included figures
-![Residual error versus iteration](figures/fig1_error_vs_iteration.png)
-![NN step size](figures/fig2_mu_vs_iteration.png)
-![MSE comparison](figures/fig3_mse_comparison.png)
-![Waveforms](figures/fig4_waveforms.png)
+## Figures
+
+The four MATLAB figures are provided in the downloadable submission package. Upload them under `figures/` to display them here. They are not yet present in this GitHub repository.
 
 ## Reproducibility and limitations
 - Test and validation samples must remain separated. Do not tune a fixed baseline on final test runs.
@@ -93,14 +91,9 @@ The quick benchmark is less statistically reliable than `benchmark_fair`. Do not
 - The NN oracle-label R² is weak; model generalization and overhead deserve further study.
 - MATLAB scripts are included as submitted; the PDF is a report of results reported by MATLAB, not a hardware validation.
 
-## Add the GitHub QR code to the report
-After this code is uploaded to a **public GitHub repository**, run the bundled utility with the exact repository URL:
+## GitHub QR code and final report
 
-```bash
-python add_repo_qr.py https://github.com/YOUR_USERNAME/YOUR_REPOSITORY
-```
-
-It generates `github_qr.png` and `project_report_with_qr.pdf` with a scannable QR code on the report cover. Requires Python packages `pymupdf`, `qrcode[pil]`, and `reportlab` (only for this report utility—not for MATLAB simulation).
+The QR code points to this repository: `https://github.com/kg097877/DSP-project`. The final technical report has a QR code on its cover and should be uploaded as `DSP_Lab_Final_Technical_Report.pdf`.
 
 ## Academic integrity
 Interpret performance claims as averages for the specified simulation, not guarantees of superiority. The source code and outcome metrics should be retained with submitted records.
